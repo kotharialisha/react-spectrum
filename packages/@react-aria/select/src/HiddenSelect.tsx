@@ -15,7 +15,7 @@ import {SelectState} from '@react-stately/select';
 import {useInteractionModality} from '@react-aria/interactions';
 import {useVisuallyHidden} from '@react-aria/visually-hidden';
 
-interface AriaHiddenSelectProps<T> {
+interface AriaHiddenSelectProps {
   /** The text label for the select. */
   label?: ReactNode,
 
@@ -26,7 +26,7 @@ interface AriaHiddenSelectProps<T> {
   isDisabled?: boolean
 }
 
-interface HiddenSelectProps<T> extends AriaHiddenSelectProps<T> {
+interface HiddenSelectProps<T> extends AriaHiddenSelectProps {
   /** State for the select. */
   state: SelectState<T>,
 
